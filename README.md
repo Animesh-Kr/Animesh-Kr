@@ -24,7 +24,7 @@ I am an AI & Cloud Engineer specializing in **Computer Vision**, **Generative AI
 * **Tech:** Python, LangChain, RAG
 * **About:** An automated content creation pipeline using Retrieval-Augmented Generation to produce context-aware captions.
 
-#### 3. [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction-CNN)
+#### 3. [Plant Disease Prediction](https://github.com/Animesh-Kr/-plant-disease-prediction-cnn-deep-leanring-project)
 * **Tech:** Azure Cognitive Services, CNNs
 * **About:** Real-time leaf disease classification system deployed via Azure for agri-tech applications.
 
