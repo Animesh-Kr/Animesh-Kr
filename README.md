@@ -1,16 +1,34 @@
-## Hi there 👋
+# Hi there, I'm Animesh Kumar! 👋
+### 🎓 MSc Advanced CS @ Newcastle University | 🇮🇳 🇬🇧
+*Eligible for UK Graduate Visa & Netherlands Orientation Year Visa (2026)*
 
-<!--
-**Animesh-Kr/Animesh-Kr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am an AI & Cloud Engineer specializing in **Computer Vision**, **Generative AI**, and **Scalable Infrastructure**. My passion lies in bridging the gap between research algorithms and production-grade deployment.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠️ Tech Stack
+* **Languages:** Python (Advanced), C++, SQL, CUDA
+* **AI/ML:** PyTorch, TensorFlow, Transformers (Hugging Face), RAG Pipelines, OpenCV
+* **Cloud:** AWS (Solutions Architect Level), Oracle Cloud, Docker, CI/CD
+* **Data:** Pandas, NumPy, Tableau, Power BI
+
+---
+
+### 🚀 Key Projects
+
+#### 1. [Human Eye Disease Prediction](https://github.com/Animesh-Kr/Human-Eye-Disease-Prediction)
+* **Tech:** Python, TensorFlow, CLAHE Preprocessing
+* **About:** A Deep Learning system (CNN) to detect Cataract and Glaucoma from fundus images with high validation accuracy.
+
+#### 2. [AI Powered Social Media Caption Generator](https://github.com/Animesh-Kr/AI-Powered-Social-Media-Post-Caption-Generator)
+* **Tech:** Python, LangChain, RAG
+* **About:** An automated content creation pipeline using Retrieval-Augmented Generation to produce context-aware captions.
+
+#### 3. [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction-CNN)
+* **Tech:** Azure Cognitive Services, CNNs
+* **About:** Real-time leaf disease classification system deployed via Azure for agri-tech applications.
+
+---
+
+### 🌐 Connect with Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/animeshakumar/)
