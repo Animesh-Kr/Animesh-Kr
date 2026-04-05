@@ -50,15 +50,18 @@ animesh = {
 
 ---
 
-### 🌿 [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction)
+### 🌿 [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction) &nbsp;[![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/plant-disease-detection1) &nbsp;[![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/plant-disease-efficientnetv2s)
 
-> **Real-time leaf disease classifier for 38 categories — deployed on Azure**
+> **Research-grade plant pathology classification pipeline — 38 diseases, 54,306 images**
 
-- **Architecture:** ResNet50 / CNN ensemble
-- **Result:** **98% Validation Accuracy**
-- **Deployment:** Azure Cognitive Services · REST API endpoint
+- **Architecture:** EfficientNetV2S fine-tuned at 384×384 with two-stage transfer learning (frozen warmup → top-40% backbone unfreeze)
+- **Dataset:** PlantVillage benchmark — family-aware 70/15/15 split with perceptual-hash near-duplicate deduplication
+- **Results:** **99.57% Test Accuracy** · **99.48% Macro F1** · **99.98% Top-3 Accuracy** · McNemar p = 3.27 × 10⁻¹⁸²
+- **Explainability:** Grad-CAM (correct + failure cases) · MC Dropout uncertainty (30 passes) · ECE calibration
+- **Visualisations:** UMAP 2D/3D embeddings · 3D performance surface · 3D confusion surface
+- **Deployment:** TFLite float16 (~45 MB) on HuggingFace CPU Basic · 3-tab Streamlit app · Interactive 3D via GitHub Pages
 
-`PyTorch` `ResNet50` `Azure` `CNN` `REST API`
+`TensorFlow` `EfficientNetV2S` `TFLite` `Streamlit` `UMAP` `Grad-CAM` `MC Dropout` `HuggingFace`
 
 ---
 
@@ -151,13 +154,12 @@ animesh = {
 
 </div>
 
-
 ---
 
 ## 🎯 Current Focus
 
 - 📝 **MIDL 2026 Short Paper** — submitting OCT retinal AI research (deadline: April 15, 2026)
-- 🌿 **Plant Disease Prediction** — ResNet50 + Azure deployment pipeline
+- 🌿 **Plant Disease Prediction** — EfficientNetV2S · 99.57% test accuracy · [Live on HuggingFace](https://huggingface.co/spaces/animeshakr/plant-disease-detection1)
 - 🎓 **PhD Applications** — targeting funded positions at TU Munich · DKFZ · FAU (Sept/Oct 2026)
 - 📖 **MSc Dissertation** — industry collaboration (IBM involvement explored)
 
