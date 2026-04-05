@@ -35,7 +35,7 @@ animesh = {
 
 ## 🚀 Featured Projects
 
-### 🔬 [OCT Retinal Disease Classification](https://github.com/Animesh-Kr/Human-Eye-Disease-Prediction) &nbsp; [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-retinal-ai)) &nbsp; [![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/oct-retinal-weights)
+### 🔬 [OCT Retinal Disease Classification](https://github.com/Animesh-Kr/Human-Eye-Disease-Prediction) &nbsp; [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-retinal-ai) &nbsp; [![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/oct-retinal-weights)
 
 > **Production-grade clinical AI system for automated retinal disease detection**
 
