@@ -190,7 +190,7 @@ animesh = {
 
 *Open to research collaborations, PhD discussions, and interesting problems in medical AI.*
 
-[![Email](https://img.shields.io/badge/Email-Get%20In%20Touch-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:animesh@akumar-tech.me)
+[![Email](https://img.shields.io/badge/Email-Get%20In%20Touch-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:animeshnda07@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-akumar--tech.me-00D4FF?style=for-the-badge&logo=vercel&logoColor=white)](https://akumar-tech.me/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/animeshakumar/)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Follow-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/animeshakr)
