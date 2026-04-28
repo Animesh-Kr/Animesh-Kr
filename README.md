@@ -1,3 +1,12 @@
+Here is everything you need — complete GitHub profile README changes plus all portfolio/CV content.
+
+---
+
+## GitHub Profile README — Complete Updated Version
+
+Replace your entire README.md with this:
+
+```markdown
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=true&width=900&height=100&lines=Hi+there%2C+I'm+Animesh+Kumar+%F0%9F%91%8B;AI+Researcher+%7C+MLOps+Engineer+%7C+PhD+Aspirant" alt="Typing SVG" />
@@ -7,6 +16,7 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-akumar--tech.me-00D4FF?style=for-the-badge&logo=vercel&logoColor=white)](https://akumar-tech.me/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-animeshakumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/animeshakumar/)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-animeshakr-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/animeshakr)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0003--0608--7004-brightgreen?style=for-the-badge)](https://orcid.org/0009-0003-0608-7004)
 [![Twitter](https://img.shields.io/badge/Twitter-@AnimeshKumar__-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/AnimeshKumar_)
 [![Credly](https://img.shields.io/badge/Credly-Certifications-FF6B00?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/animesh-kumar.d87a7137)
 
@@ -23,7 +33,9 @@ animesh = {
     "role"       : "AI Researcher & MLOps Engineer",
     "education"  : ["MSc Advanced Computer Science @ Newcastle University (2025–26, on track for Distinction)",
                     "B.Tech CSE (AI Specialization) @ AKTU, India"],
-    "research"   : ["Medical Image Analysis", "Computer Vision", "Generative AI", "Clinical AI Safety"],
+    "research"   : ["Medical Image Analysis", "Computer Vision",
+                    "Generative AI", "Clinical AI Safety",
+                    "Uncertainty Quantification"],
     "goal"       : "Funded PhD in AI/Medical Imaging (Germany, 2026) — targeting TU Munich, DKFZ, FAU",
     "location"   : "Newcastle upon Tyne, UK 🇬🇧",
     "visa"       : "Eligible: UK Graduate Visa & Netherlands Orientation Year Visa (2026)",
@@ -35,33 +47,55 @@ animesh = {
 
 ## 🚀 Featured Projects
 
-### 🔬 [OCT Retinal Disease Classification](https://github.com/Animesh-Kr/Human-Eye-Disease-Prediction) &nbsp; [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-retinal-ai) &nbsp; [![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/oct-retinal-weights)
+### 🔬 [OCT Retinal Fluid Segmentation](https://github.com/Animesh-Kr/oct-fluid-segmentation) &nbsp; [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19808008.svg)](https://doi.org/10.5281/zenodo.19808008) &nbsp; [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-fluid-segmentation) &nbsp; [![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/oct-fluid-segmentation)
+
+> **PhD-level independent research — multi-class retinal fluid segmentation with clinical uncertainty triage**
+
+- **Architecture:** Dual AttentionTransUNetL ensemble (EfficientNetV2L encoder, 127M params each) + Transformer bottleneck (d_model=512, 16 heads) + 4× Attention Gates + Source-Adaptive BatchNorm
+- **Dataset:** 4 independent OCT sources — DUKE DME, AROI, UMN AMD, UMN DME (4983 training slices)
+- **Results:** V2L val Dice **0.784 ± 0.006** across 3 seeds · IRF 0.916 · SRF 0.856 · PED 0.581
+- **Novel:** UCUS — Uncertainty-Weighted Clinical Urgency Score (Monitor / Review / Urgent triage)
+- **Clinical Safety:** Uncertainty **1.34× higher** at inter-grader disagreement pixels (p=3.77e-05) · SRF volume r=0.778 · PED volume r=0.841
+- **Deployment:** INT8 quantised (510MB → 132MB, 3.9×) · ONNX export · Streamlit dashboard · FastAPI endpoint
+- **Targeting:** arXiv preprint + OMIA 2027 Workshop at MICCAI
+
+`PyTorch` `EfficientNetV2L` `TransUNet` `MC Dropout` `ONNX` `Streamlit` `FastAPI` `HuggingFace`
+
+---
+
+### 🔬 [OCT Retinal Disease Classification](https://github.com/Animesh-Kr/Human-Eye-Disease-Prediction) &nbsp; [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19224303.svg)](https://doi.org/10.5281/zenodo.19224303) &nbsp; [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-retinal-ai) &nbsp; [![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/oct-retinal-weights)
 
 > **Production-grade clinical AI system for automated retinal disease detection**
 
 - **Architecture:** EfficientNetV2L + 4× Multi-Head Attention + Learnable Positional Encoding + XGBoost hybrid head
 - **Dataset:** Kermany et al. (84K OCT images — CNV, DME, DRUSEN, NORMAL)
-- **Results:** 5-seed validated · **95.4% Accuracy** · **Macro AUC 0.994** · **Macro F1 0.924**
-- **Clinical Safety:** Mahalanobis OOD Detection · MC Dropout · Temperature Scaling · Grad-CAM · SHAP · UMAP
-- **HPO:** Optuna with 50-trial Bayesian search · McNemar significance testing
-- **Deployment:** Streamlit dashboard (local RTX 4060: ~150ms) + HuggingFace Spaces (demo mode)
+- **Results:** 5-seed validated · **95.43% ± 0.27% Accuracy** · **Macro AUC 0.9941 ± 0.0006** · ECE 0.0024
+- **RETFound comparison:** Matches 303M-parameter foundation model while being 5× more stable across seeds
+- **Clinical Safety:** Mahalanobis OOD Detection · MC Dropout · Temperature Scaling · Grad-CAM · SHAP
+- **Deployment:** ONNX 237MB · ~62.9ms CPU · Streamlit + Gradio + FastAPI on HuggingFace
 
 `TensorFlow` `EfficientNetV2L` `XGBoost` `Optuna` `SHAP` `Streamlit` `HuggingFace`
 
 ---
 
-### 🌿 [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction) &nbsp;[![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/plant-disease-detection1) &nbsp;[![Model Weights](https://img.shields.io/badge/🤗%20Model%20Weights-HuggingFace-orange?style=flat-square)](https://huggingface.co/animeshakr/plant-disease-efficientnetv2s)
+### 🔗 [OCT Complete Diagnostic Pipeline](https://huggingface.co/spaces/animeshakr/oct-complete-pipeline)
 
-> **Research-grade plant pathology classification pipeline — 38 diseases, 54,306 images**
+> **End-to-end clinical pipeline connecting both retinal AI projects**
 
-- **Architecture:** EfficientNetV2S fine-tuned at 384×384 with two-stage transfer learning (frozen warmup → top-40% backbone unfreeze)
-- **Dataset:** PlantVillage benchmark — family-aware 70/15/15 split with perceptual-hash near-duplicate deduplication
-- **Results:** **99.57% Test Accuracy** · **99.48% Macro F1** · **99.98% Top-3 Accuracy** · McNemar p = 3.27 × 10⁻¹⁸²
-- **Explainability:** Grad-CAM (correct + failure cases) · MC Dropout uncertainty (30 passes) · ECE calibration
-- **Visualisations:** UMAP 2D/3D embeddings · 3D performance surface · 3D confusion surface
-- **Deployment:** TFLite float16 (~45 MB) on HuggingFace CPU Basic · 3-tab Streamlit app · Interactive 3D via GitHub Pages
+- Stage 1: Classification (CNV / DME / DRUSEN / NORMAL) via ONNX inference
+- Stage 2: Fluid segmentation (IRF / SRF / PED) with live ONNX dual ensemble
+- UCUS clinical triage score computed end-to-end from raw scan to urgency band
 
-`TensorFlow` `EfficientNetV2S` `TFLite` `Streamlit` `UMAP` `Grad-CAM` `MC Dropout` `HuggingFace`
+---
+
+### 🌿 [Plant Disease Prediction](https://github.com/Animesh-Kr/Plant-Disease-Prediction) &nbsp;[![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/plant-disease-detection1)
+
+> **Research-grade plant pathology classification — 38 diseases, 54,306 images**
+
+- **Results:** **99.57% Test Accuracy** · **99.48% Macro F1** · McNemar p = 3.27 × 10⁻¹⁸²
+- **Architecture:** EfficientNetV2S · two-stage transfer learning · TFLite float16 (~45 MB)
+
+`TensorFlow` `EfficientNetV2S` `TFLite` `Streamlit` `UMAP` `HuggingFace`
 
 ---
 
@@ -69,22 +103,9 @@ animesh = {
 
 > **Automated content creation pipeline with RAG + fine-tuned Llama-2**
 
-- Retrieved contextually relevant captions using LangChain RAG pipelines
-- ~70% reduction in manual writing time for social media teams
-- Modular prompt engineering with vector store retrieval
+- ~70% reduction in manual writing time · LangChain RAG · vector store retrieval
 
-`LangChain` `RAG` `Llama-2` `Python` `OpenCV`
-
----
-
-### ☁️ [AWS WebScaler](https://github.com/Animesh-Kr/Give-Life-Predict-Blood-Donations)
-
-> **Auto-scaling cloud infrastructure with VPC + ELB on AWS**
-
-- Multi-AZ deployment with Elastic Load Balancing
-- Infra-as-code for reproducible cloud environments
-
-`AWS` `VPC` `ELB` `Docker` `CI/CD`
+`LangChain` `RAG` `Llama-2` `Python`
 
 ---
 
@@ -158,16 +179,16 @@ animesh = {
 
 ## 🎯 Current Focus
 
-- 📝 **MIDL 2026 Short Paper** — submitting OCT retinal AI research (deadline: April 15, 2026)
-- 🌿 **Plant Disease Prediction** — EfficientNetV2S · 99.57% test accuracy · [Live on HuggingFace](https://huggingface.co/spaces/animeshakr/plant-disease-detection1)
+- 🔬 **OCT Fluid Segmentation** — arXiv preprint submission (targeting cs.CV / eess.IV)
+- 🔬 **OCT Classification** — arXiv preprint submission
 - 🎓 **PhD Applications** — targeting funded positions at TU Munich · DKFZ · FAU (Sept/Oct 2026)
-- 📖 **MSc Dissertation** — industry collaboration (IBM involvement explored)
+- 📖 **MSc Dissertation** — Newcastle University (2025–26)
 
 ---
 
 ## 🔬 Research Interests
 
-`Medical Image Analysis` &nbsp;`Computer Vision` &nbsp;`Generative AI` &nbsp;`Clinical AI Safety`  
+`Medical Image Analysis` &nbsp;`Computer Vision` &nbsp;`Generative AI` &nbsp;`Clinical AI Safety`
 `Uncertainty Quantification` &nbsp;`Explainable AI (XAI)` &nbsp;`Transformer Architectures` &nbsp;`MLOps`
 
 ---
@@ -188,3 +209,92 @@ animesh = {
 *"Building AI that doctors can trust and researchers can build on."*
 
 </div>
+```
+
+---
+
+## CV / Portfolio Content — Complete Text Block
+
+Paste this into your portfolio chat or CV document:
+
+---
+
+### Project 1 — OCT Retinal Fluid Segmentation
+
+**Title:** Attention-Guided TransUNet for Multi-Class Retinal Fluid Segmentation in OCT with MC Dropout Uncertainty Quantification
+
+**Type:** Independent PhD-level research project | Newcastle University MSc Advanced Computer Science 2025–26
+
+**DOI:** 10.5281/zenodo.19808008
+
+**Links:**
+- GitHub: github.com/Animesh-Kr/oct-fluid-segmentation
+- Model weights: huggingface.co/animeshakr/oct-fluid-segmentation
+- Live demo: huggingface.co/spaces/animeshakr/oct-fluid-segmentation
+- API: huggingface.co/spaces/animeshakr/oct-fluid-segmentation-api
+- Complete pipeline: huggingface.co/spaces/animeshakr/oct-complete-pipeline
+
+**Key results:**
+- V2L validation Dice 0.784 ± 0.006 across 3 independent seeds
+- IRF Dice 0.916 ± 0.003 | SRF Dice 0.856 ± 0.003 | PED Dice 0.581 ± 0.018
+- Model uncertainty 1.34× higher at inter-grader disagreement pixels (p=3.77e-05)
+- SRF volume correlation r=0.778 (p=6.33e-04) | PED volume correlation r=0.841 (p=8.64e-05)
+- INT8 quantisation: 510MB → 132MB (3.9× compression)
+
+**Novel contributions:**
+1. UCUS — Uncertainty-Weighted Clinical Urgency Score (Monitor / Review / Urgent)
+2. Dual uncertainty: MC Dropout + inter-model disagreement
+3. Source-Adaptive BatchNorm for cross-scanner domain adaptation
+4. Multi-source 4-dataset evaluation (DUKE, AROI, UMN AMD, UMN DME)
+
+**Tech stack:** PyTorch, EfficientNetV2L, TransUNet, ONNX, Streamlit, FastAPI, HuggingFace, Google Colab H100
+
+**Targeting:** arXiv preprint (cs.CV/eess.IV) + OMIA 2027 Workshop at MICCAI
+
+---
+
+### Project 2 — OCT Retinal Disease Classification
+
+**Title:** A Hybrid CNN-Transformer Framework for Retinal OCT Classification with Integrated Clinical Safety Mechanisms
+
+**Type:** Independent research project | Newcastle University MSc Advanced Computer Science 2025–26
+
+**DOI:** 10.5281/zenodo.19224303
+
+**Links:**
+- GitHub: github.com/Animesh-Kr/Human-Eye-Disease-Prediction
+- Model weights: huggingface.co/animeshakr/oct-retinal-weights
+- Streamlit dashboard: huggingface.co/spaces/animeshakr/oct-retinal-ai
+- FastAPI endpoint: huggingface.co/spaces/animeshakr/oct-retinal-api
+- Complete pipeline: huggingface.co/spaces/animeshakr/oct-complete-pipeline
+
+**Key results:**
+- 95.43% ± 0.27% accuracy across 5 independent seeds
+- Macro AUC-ROC 0.9941 ± 0.0006 | Macro F1 0.9244 ± 0.0047
+- ECE 0.0024 (12× improvement from uncalibrated)
+- McNemar p < 0.0001 vs baseline (all seeds)
+- Matches RETFound 303M-parameter foundation model while being 5× more stable across seeds
+- ONNX edge deployment: 2.07GB → 237MB, ~62.9ms CPU inference
+
+**Novel contributions:**
+1. Hybrid EfficientNetV2L + 4× Multi-Head Attention + XGBoost head
+2. Three-layer clinical safety: Temperature scaling + Mahalanobis OOD + MC Dropout
+3. RETFound foundation model comparison (first OCT paper to do so with full multi-seed protocol)
+4. Grad-CAM + SHAP dual explainability
+
+**Tech stack:** TensorFlow, EfficientNetV2L, XGBoost, Optuna, ONNX, Streamlit, FastAPI, HuggingFace
+
+**Targeting:** arXiv preprint (cs.CV/eess.IV)
+
+---
+
+### ORCID Profile
+
+**ID:** 0009-0003-0608-7004
+**URL:** orcid.org/0009-0003-0608-7004
+**Works listed:** Both projects registered with DOIs and all HuggingFace/GitHub identifiers
+
+---
+
+CI badge corrected to main branch
+```
