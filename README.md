@@ -1,12 +1,3 @@
-Here is everything you need — complete GitHub profile README changes plus all portfolio/CV content.
-
----
-
-## GitHub Profile README — Complete Updated Version
-
-Replace your entire README.md with this:
-
-```markdown
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=true&width=900&height=100&lines=Hi+there%2C+I'm+Animesh+Kumar+%F0%9F%91%8B;AI+Researcher+%7C+MLOps+Engineer+%7C+PhD+Aspirant" alt="Typing SVG" />
