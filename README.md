@@ -200,4 +200,3 @@ animesh = {
 *"Building AI that doctors can trust and researchers can build on."*
 
 </div>
-```
