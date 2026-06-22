@@ -69,7 +69,7 @@ animesh = {
 
 ---
 
-### 🔗 [OCT Complete Diagnostic Pipeline] [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-complete-pipeline)
+### 🔗 OCT Complete Diagnostic Pipeline [![Live Demo](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace-FFD21E?style=flat-square)](https://huggingface.co/spaces/animeshakr/oct-complete-pipeline)
 
 > **End-to-end clinical pipeline connecting both retinal AI projects**
 
